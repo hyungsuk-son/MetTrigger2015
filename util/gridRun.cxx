@@ -42,10 +42,11 @@ int main( int argc, char* argv[] ) {
 //  SH::addGrid (sh, "data15_13TeV.00281411.physics_Main.merge.AOD.f629_m1504");
   //SH::addGrid (sh, "data15_13TeV.00282992.physics_Main.merge.AOD.r7562_p2521");
   //SH::addGrid (sh, "data15_13TeV.00283074.physics_Main.merge.AOD.r7562_p2521");
-  SH::addGrid (sh, "data15_13TeV.00282992.physics_Main.merge.AOD.f640_m1511");
+  //SH::addGrid (sh, "data15_13TeV.00282992.physics_Main.merge.AOD.f640_m1511");
   //SH::addGrid (sh, "data15_13TeV.00283074.physics_Main.merge.AOD.f640_m1511");
   //SH::addGrid (sh, "data15_13TeV.00283155.physics_Main.merge.AOD.f640_m1511");
   //SH::addGrid (sh, "data15_13TeV.00282712.physics_Main.merge.AOD.f640_m1511");
+  SH::addGrid (sh, "data15_13TeV.00283429.physics_ZeroBias.merge.AOD.f643_m1518");
 
 
   // Set the name of the input TTree. It's always "CollectionTree"
@@ -91,7 +92,7 @@ int main( int argc, char* argv[] ) {
   EL::PrunDriver driver;  //grid
 //  EL::GridDriver driver; //grid in the background
 
-  driver.options()->setString("nc_outputSampleName", "user.hson.xAOD.06022016.%in:name[2]%.%in:name[6]%"); //For PrunDriver
+  driver.options()->setString("nc_outputSampleName", "user.hson.xAOD.06112016v2.%in:name[2]%.%in:name[6]%"); //For PrunDriver
 //  driver.outputSampleName = "user.hson.gridtest1.11142015.%in:name[2]%.%in:name[6]%"; //For GridDriver
 //  driver.options()->setDouble("nc_nFiles", 1); // FOR TESTING!
 //  driver.options()->setDouble("nc_nFilesPerJob", 1);
